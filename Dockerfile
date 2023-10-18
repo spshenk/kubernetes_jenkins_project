@@ -8,15 +8,15 @@ zip \
 
 unzip
 
-ADD https://www.free-css.com/free-css-templates/page285/viking.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/browny.zip /var/www/html/
 
 WORKDIR /var/www/html
 
-RUN unzip viking.zip
+RUN unzip browny.zip
 
-RUN cp -rvf viking/* .
+RUN cp -rvf browny/* .
 
-RUN rm -rf viking viking.zip
+RUN rm -rf browny browny.zip
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
