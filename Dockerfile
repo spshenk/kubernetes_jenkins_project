@@ -2,9 +2,9 @@ FROM centos:7
 
 MAINTAINER spshenk@gamil.com
 
-RUN yum install -y httpd\
+RUN yum install -y httpd \
 
-zip\
+zip \
 
 unzip
 
