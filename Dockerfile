@@ -14,7 +14,7 @@ WORKDIR /var/www/html
 
 RUN unzip browny.zip
 
-RUN cp -rvf browny/* .
+RUN cp -rvf browny-v1.0/* .
 
 RUN rm -rf browny browny.zip
 
