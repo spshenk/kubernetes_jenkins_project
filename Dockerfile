@@ -8,17 +8,17 @@ zip \
 
 unzip
 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD https://www.free-css.com/free-css-templates/page285/viking.zip /var/www/html/
 
 WORKDIR /var/www/html
 
-RUN unzip photogenic.zip
+RUN unzip viking.zip
 
-RUN cp -rvf photogenic/* .
+RUN cp -rvf viking/* .
 
-RUN rm -rf photogenic photogenic.zip
+RUN rm -rf viking viking.zip
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
-EXPOSE 80 443
+EXPOSE 80 44 
 
