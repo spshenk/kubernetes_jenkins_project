@@ -8,7 +8,7 @@ zip \
 
 unzip
 
-ADD https://formycicdproject.s3.amazonaws.com/Antique+Cafe+Free+Website+Template+-+Free-CSS.com.zip /var/www/html/
+ADD https://formycicdproject.s3.amazonaws.com/Antique_Cafe_Free_Website_Template_Free_CSS.zip /var/www/html/
 
 WORKDIR /var/www/html
 
