@@ -8,17 +8,17 @@ zip \
 
 unzip
 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/browny.zip /var/www/html/
+ADD https://formycicdproject.s3.amazonaws.com/Antique+Cafe+Free+Website+Template+-+Free-CSS.com.zip /var/www/html/
 
 WORKDIR /var/www/html
 
-RUN unzip browny.zip
+RUN unzip "Antique Cafe Free Website Template - Free-CSS.com.zip"
 
-RUN cp -rvf browny-v1.0/* .
+RUN cp -rvf 2126_antique_cafe/* .
 
-RUN rm -rf browny browny.zip
+RUN rm -rf  "Antique Cafe Free Website Template - Free-CSS.com" "Antique Cafe Free Website Template - Free-CSS.com.zip"
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
-EXPOSE 80 44 
+EXPOSE 80 443 
 
