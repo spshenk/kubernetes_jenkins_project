@@ -12,11 +12,11 @@ ADD https://formycicdproject.s3.amazonaws.com/Antique+Cafe+Free+Website+Template
 
 WORKDIR /var/www/html
 
-RUN unzip "Antique Cafe Free Website Template - Free-CSS.com.zip"
+RUN unzip Antique_Cafe_Free_Website_Template_Free_CSS.zip
 
 RUN cp -rvf 2126_antique_cafe/* .
 
-RUN rm -rf  "Antique Cafe Free Website Template - Free-CSS.com" "Antique Cafe Free Website Template - Free-CSS.com.zip"
+RUN rm -rf  Antique_Cafe_Free_Website_Template_Free_CSS Antique_Cafe_Free_Website_Template_Free_CSS.zip
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
