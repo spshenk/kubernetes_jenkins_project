@@ -20,5 +20,5 @@ RUN rm -rf  Antique_Cafe_Free_Website_Template_Free_CSS Antique_Cafe_Free_Websit
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
-EXPOSE 80
+EXPOSE 80 443
 
