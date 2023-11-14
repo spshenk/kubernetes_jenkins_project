@@ -17,4 +17,4 @@ spec:
           image: spshenk/pipeline-demo
           imagePullPolicy: Always
           ports:
-            - containerPort: 80 443
+            - containerPort: 80 
